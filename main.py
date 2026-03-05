@@ -9,15 +9,15 @@ from numba import njit
 import random
 
 # config
-FPS = 120
+FPS = 120 # all phyics run at 120 times per second !!
 DT = 1.0 / FPS
-POPULATION_SIZE = 150 
-MUTATION_RATE = 0.15
-NUM_SENSORS = 17
-INPUT_NODES = 18  
-HIDDEN_NODES = 96 # 48 #24
-OUTPUT_NODES = 4  
-TIMEOUT_SECONDS = 5.0 
+POPULATION_SIZE = 150 # lower this if your hardware is lagging too much
+MUTATION_RATE = 0.15 #default unless using dynamic mutation
+NUM_SENSORS = 17 # you can customize this, this is the number of sensors that the car sees
+INPUT_NODES = 18  # make this 1 + num_sensors. the extra input is speed
+HIDDEN_NODES = 24 # higher you make this the "smarter" it gets, requires more training though
+OUTPUT_NODES = 4  # dont change this (gas, brake, left, right)
+TIMEOUT_SECONDS = 5.0  # 5 second timeout gets reset every checkpoint you cross
 LEADERBOARD_CACHE = []
 
 #    num_points,  radius
