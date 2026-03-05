@@ -10,6 +10,10 @@
 *This contains information on the models created from training in Formula Zero.*  
 *(updated: 3/5/2026 - Tom White)*
 
+## How to install?
+1) pip install matplotlib streamlit pandas numba numpy pygame
+2) Run Main.py
+
 ## Table of Contents
 - [Section 1: Models](#section-1-models)
 - [Section 2: How each model differs](#section-2-how-each-model-differs)
