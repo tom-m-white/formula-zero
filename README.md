@@ -11,8 +11,10 @@
 *(updated: 3/5/2026 - Tom White)*
 
 ## How to install?
-1) pip install matplotlib streamlit pandas numba numpy pygame
-2) Run Main.py
+1) Clone repo
+2) pip install matplotlib streamlit pandas numba numpy pygame
+3) Run Main.py
+4) (optional) run tournament_stats.py after completing a tourney to see its stats!
 
 ## Table of Contents
 - [Section 1: Models](#section-1-models)
