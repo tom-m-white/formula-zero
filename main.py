@@ -785,6 +785,7 @@ def tournament_mode(screen, clock, font):
                         h2h_stats[matchup_key][2] += 1 
                         
                     new_r1, new_r2 = calculate_elo(ratings[p1_file], ratings[p2_file], score_1)
+                    ratings[p1_file] = new_r1
                     ratings[p2_file] = new_r2
                     match_counts[p1_file] += 1
                     match_counts[p2_file] += 1
